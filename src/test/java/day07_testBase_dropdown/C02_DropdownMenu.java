@@ -63,12 +63,13 @@ public class C02_DropdownMenu extends TestBase {
         dropdownMenuElementi = driver.findElement(By.id("searchDropdownBox"));
         select = new Select(dropdownMenuElementi);
         System.out.println(select.getFirstSelectedOption().getText()); // Baby
-        // sectigimiz opsiyon'un Baby oldugunu test edin
+        //sectigimiz opsiyon'un Baby oldugunu test edin
         String expectedSeciliOption = "Baby";
         String actualSeciliOption = select.getFirstSelectedOption().getText();
         Assert.assertEquals(expectedSeciliOption,actualSeciliOption);
         bekle(3);
     }
+
 }
 
 
